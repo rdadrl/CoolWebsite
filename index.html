@@ -196,7 +196,10 @@
 		}, true);
 
 		document.addEventListener("wheel", function (e) {
-			var updatedTransformDegrees = getCircleRotation() - Math.max(e.deltaY * 3, 15);
+			var updatedTransformDegrees = getCircleRotation();
+			if (e.deltaY > 0) updatedTransformDegrees -= Math.min(e.deltaY * 3, 15);
+			else updatedTransformDegrees -= Math.max(e.deltaY * 3, -15);
+			
 			updateCircleRotation(updatedTransformDegrees);
 
 			determineLinkUpdate();
