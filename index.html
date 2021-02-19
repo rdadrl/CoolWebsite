@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cool Website</title>
+	<style>
+		body {
+			background: #1d2d50;
+			color: #fcdab7;
+
+		    font-family: 'Montserrat', sans-serif;
+
+			padding: 0;
+			margin: 0;
+		}
+
+		h1, h2, h3, h4, h5 {
+			font-family: 'Bebas Neue', cursive;
+		}
+
+		.container {
+
+		}
+
+		.navBar {
+			position: fixed;
+			height: 60px;
+			width: 100%;
+
+			text-align: right;
+			z-index: 1;
+			right: 0;
+		}
+
+		.navCircle {
+			position: inline-block;
+			margin: 5px;
+
+			float: right;
+
+			width: 50px;
+			height: 50px;
+
+			background-color: #1e5f74;
+
+			box-sizing: border-box;
+		    -moz-box-sizing: border-box;
+		    -webkit-box-sizing: border-box;
+
+			border: 5px dashed #133b5c;
+			border-radius: 50%;
+			transform: rotate(0deg);
+		}
+
+		.navList {
+			display: inline-block;
+
+			margin: 0;
+			padding: 0;
+		}
+
+		.navList li {
+			display: none;
+		}
+
+		.navList .active {
+			display: block;
+			position: fixed;
+
+			top: 20px;
+			right: 20px;
+
+			height: 0;
+			line-height: 0;
+			width: 150px;
+			text-align: right;
+			transform-origin: center right;
+		}
+
+		.navLink {
+			margin-right: 30px;
+			color: #fcdab7;
+			text-decoration: none;
+			font-family: 'Bebas Neue', cursive;
+		}
+
+		#footer {
+			position: fixed;
+
+			width: 80%;
+			left: 10%;
+			bottom: 0;
+			height: 100px;
+			
+			border-top: 1px dashed #1e5f74;
+
+			line-height: 50px;
+			text-align: center;
+		}
+
+		.content {
+			position: fixed;
+			display: inline-block;
+
+			width: 100%;
+			height: calc(100% - 210px);
+			top: 100px;
+		}
+
+		.contentBody {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+	</style>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap" rel="stylesheet"> 
+</head>
+<body>
+	<div class="container navBar">
+		<div class="navCircle">
+			<ul class="navList">
+			<li><a class="navLink">Landing</a></li>
+			<li><a class="navLink">About Me</a></li>
+			<li><a class="navLink">Horizontal Navigation</a></li>
+			<li><a class="navLink">Farewell</a></li>
+		</ul>
+		</div>
+	</div>
+
+	<div class="container">
+		<div id="Landing" class="content container">
+			<div class="contentBody">
+				<h1>Try scrolling!</h1>
+				<p>
+					Although unintuitive, this scrolling motion is <span style="text-decoration: underline;">different</span>; and that is all that is necessary to obtain the users attention, for whatever it is required for. By the way this website will work best at 16:9 on a desktop machine :)
+					<br>
+					I don't know what else to fill this page with so,
+				</p>
+				<div style="text-align: center;">
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/SLP9mbCuhJc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+			</div>	
+		</div>
+		<div id="About Me" class="content container">
+			<div class="contentBody">
+				<h1>About me</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sagittis augue sit amet diam laoreet, vel viverra ipsum mattis. Ut sit amet elit tincidunt, tempor nisl et, vehicula nisi. In hac habitasse platea dictumst. Vivamus eros urna, rutrum ut urna sed, hendrerit vehicula risus. Integer nec velit vulputate, pulvinar ex lobortis, varius massa. Sed sodales, enim vel consectetur luctus, eros leo consequat nisl, ut efficitur magna orci sit amet neque. Quisque neque arcu, aliquet vulputate posuere sit amet, faucibus et urna. Etiam eu diam a erat fringilla placerat. Maecenas pretium placerat urna sed congue. Maecenas interdum enim eu libero sollicitudin elementum. Maecenas odio sapien, rutrum sit amet justo ut, sagittis mattis neque. Proin ultricies interdum diam, in bibendum nulla viverra nec. Curabitur bibendum dui in pretium volutpat.
+				<br><br>
+				Nunc malesuada ex urna, ac ornare ex suscipit et. Quisque consectetur ante eu purus aliquet, nec cursus mauris luctus. Pellentesque pellentesque congue semper. Suspendisse lacinia neque congue lacinia interdum. Aliquam ultrices tortor quis purus lacinia, vitae mattis lacus iaculis. Donec sagittis sapien ligula. Pellentesque fringilla consequat ligula ac vulputate. Donec in maximus lorem, sed hendrerit libero. Donec a luctus magna.
+				</p>
+			</div>
+		</div>
+		<div id="Horizontal Navigation" class="content container">
+			<div class="contentBody">
+				<h1>Functionalities Implemented</h1>
+				<ul>
+					<li>Try clicking on one of the links on the top right circle.</li>
+					<li>Try scrolling down and up the page.</li>
+					<li>All dynamic- arbitrary number of links and content are possible</li>
+					<li>thats it...</li>
+				</ul>
+			</div>
+		</div>
+		<div id="Farewell" class="content container">
+			<div class="contentBody" style="text-align: center;">
+				<h1>Goodbye!</h1>
+				<h2>that's it! end of the show :)</h2>
+			</div>
+		</div>
+	</div>
+
+	<div id="footer" class="container">
+		With love <3 wishing you all patience within these dire circumstances! Thanks for the competition :)
+		<br>
+		A. Ntourali
+	</div>
+
+	<script>
+		var linkList = document.getElementsByClassName("navList")[0].getElementsByTagName("li");
+		var navCircle = document.getElementsByClassName("navCircle")[0];
+		var contentBlocks = document.getElementsByClassName("content");
+		var segmentSize = 360 / linkList.length;
+		navCircle.style.transform = "rotate(0deg)";
+
+		document.addEventListener("load", function (e) {
+			initializeSegmentedLinks();
+			determineLinkUpdate();
+
+			//add proper onclick events to the links
+			var navLinkList = document.getElementsByClassName("navLink");
+			for (var i = 0; i < navLinkList.length; i++) {
+				navLinkList[i].setAttribute("href", "#" + navLinkList[i].textContent);
+				navLinkList[i].onclick = function () { rotateToLink(this) };
+			}
+
+			initializePositionsOfContentBlocks();
+		}, true);
+
+		document.addEventListener("wheel", function (e) {
+			var updatedTransformDegrees = getCircleRotation() - (e.deltaY * 3);
+			updateCircleRotation(updatedTransformDegrees);
+
+			determineLinkUpdate();
+		    return false;
+		    
+		}, true);
+
+		//Circle Stuff
+		function initializeSegmentedLinks() {
+			for (var i = 0; i < linkList.length; i++) {
+				linkList[i].style.transform = "rotate(" + (i * segmentSize) + "deg)";
+			}
+		}
+
+		function getCircleRotation() {
+			var currentTransformFunction = navCircle.style.transform.split("(")[1];;
+			return parseInt(currentTransformFunction.split("deg)")[0]);
+		}
+
+		function getNormalisedCircleRotation() {
+			var tempRes = getCircleRotation();
+			while (tempRes < 0)
+				tempRes += 360;
+
+			return tempRes % 360;
+		}
+
+		var deltaSum = 0;
+		function updateCircleRotation(rotationInDegrees) {
+			var deltaMove = getCircleRotation() - rotationInDegrees;
+			var deltaMoveBlocks = deltaMove * (100 / segmentSize);
+			moveAllContentBlocksBy(-deltaMoveBlocks);
+			navCircle.style.transform = "rotate(" + rotationInDegrees + "deg)";
+		}
+
+		function determineLinkUpdate() {
+			for (var i = 0; i < linkList.length; i++) {
+				var originalPos = i * segmentSize;
+
+				var relativeAngle = (getNormalisedCircleRotation() + originalPos) % 360;
+
+				if (relativeAngle >= 90 && relativeAngle <= 180) {
+					linkList[i].className = "";	
+				}
+				else {
+					linkList[i].className = "active";
+
+					var distanceFromZero = relativeAngle;
+					if (relativeAngle > 180) distanceFromZero = 360 - relativeAngle;
+					var determinedOpacity = 1 - (distanceFromZero / 180);
+
+					linkList[i].style.opacity = determinedOpacity;
+				}
+			}
+		}
+
+		//given a navLink, finds the index.
+		function determineIndexForLink(navLinkTarget) {
+			for (var i = 0; i < linkList.length; i++) {
+				var currElem = linkList[i].getElementsByClassName("navLink")[0];
+
+				if (currElem == navLinkTarget) return i;
+			}
+			return -1;
+		}
+
+		var rotationInterval = null;
+		function rotateToLink(navLink) {
+			if (rotationInterval != null) clearInterval(rotationInterval);
+
+			var navIndex = determineIndexForLink(navLink);
+
+			var targetSegmentDegree = navIndex * segmentSize;
+
+			targetPos = 360 - targetSegmentDegree;
+			if (targetPos == 360) targetPos = 0;
+			deltaToTarget = -(getNormalisedCircleRotation() - targetPos);
+
+
+			rotationInterval = setInterval(function() {
+				if (getNormalisedCircleRotation() != targetPos) {
+					updateCircleRotation(getCircleRotation() + 1);
+					determineLinkUpdate();
+				}
+				else {
+					console.log("test");
+					clearInterval(rotationInterval);
+				}
+			}, 5);	
+		}
+
+		//Content Stuff
+		function initializePositionsOfContentBlocks() {
+			var contentBlocks = document.getElementsByClassName("content");
+
+			for (var i = 0; i < contentBlocks.length; i++) {
+				contentBlocks[i].style.left = (100 * i) + "%";
+			}
+		}
+
+		function moveAllContentBlocksBy(margin) {
+			if (margin != 0) {
+				if (margin < 0) { //we'd have to check if we have content to show on the right!
+					var mostRight = mostRightContent();
+					var mostRightPos = parseFloat(mostRight.style.left.split("%")[0]);
+					if (mostRightPos + margin < 0) {
+						console.log("While moving, seems like I run out of content to show!");
+						var mostLeft = mostLeftContent();
+						mostLeft.style.left = (mostRightPos + 100) + "%";
+					}
+				}
+				else { //vice-versa
+					var mostLeft = mostLeftContent();
+					var mostLeftPos = parseFloat(mostLeft.style.left.split("%")[0]);
+					if (mostLeftPos + margin > 0) {
+						var mostRight = mostRightContent();
+						mostRight.style.left = (mostLeftPos - 100) + "%";
+					}
+				}
+
+				//actual movement part
+				for (var i = 0; i < contentBlocks.length; i++) {
+					currentLeftPos = contentBlocks[i].style.left.split("%")[0];
+
+					contentBlocks[i].style.left = ((parseFloat(currentLeftPos) + margin) % (contentBlocks.length * 100)) + "%";
+				}
+			}
+		}
+
+		function determineIndexForContent(contentTarget) {
+			for (var i = 0; i < contentBlocks.length; i++) {
+				if (contentBlocks[i] == contentTarget) return i;
+			}
+			return -1;
+		}
+
+		function mostLeftContent() {
+			var leftContent = contentBlocks[0];
+			for (var i = 0; i < contentBlocks.length; i++) {
+				currentLeftPos = parseFloat(contentBlocks[i].style.left.split("%")[0]);
+				bestLeftPos = parseFloat(leftContent.style.left.split("%")[0]);
+
+				if (currentLeftPos < bestLeftPos) {
+					leftContent = contentBlocks[i];
+				}
+			}
+			return leftContent;
+		}
+
+		function mostRightContent() {
+			var rightContent = contentBlocks[0];
+			for (var i = 0; i < contentBlocks.length; i++) {
+				currentRightPos = parseFloat(contentBlocks[i].style.left.split("%")[0]);
+				bestRightPos = parseFloat(rightContent.style.left.split("%")[0]);
+
+				if (currentRightPos > bestRightPos) {
+					rightContent = contentBlocks[i];
+				}
+			}
+			return rightContent;
+		}
+	</script>
+</body>
+</html>
